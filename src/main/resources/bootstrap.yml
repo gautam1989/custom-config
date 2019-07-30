@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active:  native
+  #cloud.config.server.vault.kvVersion: 2
+  #cloud.config.server.vault.profileSeparator: /
+  #cloud.config.server.git.uri: file://${user.home}/git-repo-invalid
+
+
+native:
+  file:
+    location: ${user.home}/native-props
+
+server:
+  port: 8888
